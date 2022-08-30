@@ -1,0 +1,138 @@
+### //create parent account
+POST http://localhost:9010/parent-sign-up
+
+{
+"phone":"9844329569"
+}
+### //parent otp verify POST https://edtech.mahajodi.io/parent-verify
+{
+"phone":"9844329569", "otp":"330242"
+}
+### //set parent password POST https://edtech.mahajodi.io/parent-set-password
+{
+"phone":"9844329569", "password":"123456789"
+}
+### // Parent Login POST https://edtech.mahajodi.io/parent-login
+{
+"phone":"9844329569", "password":"123456789"
+}
+### // Add Parent name POST https://edtech.mahajodi.io/add-parent-detail Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTAxYjQwLTA1NzQtNDkwYi05YzRkLWZjNGMyZmQyOGU2MyIsInVzZXJuYW1lIjoiIiwicGFyZW50X2lkIjoxMiwiaXNzdWVkX2F0IjoiMjAyMS0xMi0wNlQxNDo1OToxNS43MjQzNTczODcrMDU6NDUiLCJleHBpcmVkX2F0IjoiMjAyMS0xMi0xMFQxODo1OToxNS43MjQzNTc1NDMrMDU6NDUifQ.tXuGD-7alnLwsAtJTjzXwHJqBm9OpDwPN8Ho8wZ0dRs
+{
+"full_name":"Aashish Mallick"
+}
+### // Edit Parent Details PATCH https://edtech.mahajodi.io/edit-parent-detail Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTAxYjQwLTA1NzQtNDkwYi05YzRkLWZjNGMyZmQyOGU2MyIsInVzZXJuYW1lIjoiIiwicGFyZW50X2lkIjoxMiwiaXNzdWVkX2F0IjoiMjAyMS0xMi0wNlQxNDo1OToxNS43MjQzNTczODcrMDU6NDUiLCJleHBpcmVkX2F0IjoiMjAyMS0xMi0xMFQxODo1OToxNS43MjQzNTc1NDMrMDU6NDUifQ.tXuGD-7alnLwsAtJTjzXwHJqBm9OpDwPN8Ho8wZ0dRs
+{
+"full_name":"Aashu Mallick", "address":"Janakpur"
+}
+### //create parent account use in forget password or resend code function POST https://edtech.mahajodi.io/parent-resend-code
+{
+"phone":"9844329569"
+}
+### // Get Details of Children in Parent Profile GET https://edtech.mahajodi.io/children-details
+### //Get parent Details GET https://edtech.mahajodi.io/parent-detail
+### //Get child Details GET https://edtech.mahajodi.io/child-detail
+### //Create Child Details POST https://edtech.mahajodi.io/add-child-detail Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk2ZmExOTVkLTk2ZTItNDY4Yy1hMzgzLWY1OTUzYmViZmE5MyIsInVzZXJuYW1lIjoiY2hvcmEiLCJwYXJlbnRfaWQiOjEsImlzc3VlZF9hdCI6IjIwMjEtMTItMTJUMDU6NTI6MjIuODM0MzE3MDY4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE2VDA5OjUyOjIyLjgzNDMxODU5NloifQ.jijyRMSiJH8nsqxG1qig7AR_Y7W1A0jIcJsRLMsBWAI
+{
+"full_name":"Mero Chora",
+"date_of_birth":"2021-12-11", "gender":"Male",
+"grade":5, "school" :"Nandi",
+"country" :"Nepal", "state" :"state2"
+}
+### //Update Child Details PATCH https://edtech.mahajodi.io/edit-child-detail Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTAxYjQwLTA1NzQtNDkwYi05YzRkLWZjNGMyZmQyOGU2MyIsInVzZXJuYW1lIjoiIiwicGFyZW50X2lkIjoxMiwiaXNzdWVkX2F0IjoiMjAyMS0xMi0wNlQxNDo1OToxNS43MjQzNTczODcrMDU6NDUiLCJleHBpcmVkX2F0IjoiMjAyMS0xMi0xMFQxODo1OToxNS43MjQzNTc1NDMrMDU6NDUifQ.tXuGD-7alnLwsAtJTjzXwHJqBm9OpDwPN8Ho8wZ0dRs {
+"full_name":"",
+"gender":"",
+"grade":0, "school" :"",
+"country" :"", "state" :""
+}
+### //get time table 0f their own child POST https://edtech.mahajodi.io/get-time-table-parent Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5OTAxYjQwLTA1NzQtNDkwYi05YzRkLWZjNGMyZmQyOGU2MyIsInVzZXJuYW1lIjoiIiwicGFyZW50X2lkIjoxMiwiaXNzdWVkX2F0IjoiMjAyMS0xMi0wNlQxNDo1OToxNS43MjQzNTczODcrMDU6NDUiLCJleHBpcmVkX2F0IjoiMjAyMS0xMi0xMFQxODo1OToxNS43MjQzNTc1NDMrMDU6NDUifQ.tXuGD-7alnLwsAtJTjzXwHJqBm9OpDwPN8Ho8wZ0dRs {
+"child_id":1
+}
+### // child login POST https://edtech.mahajodi.io/child-login
+{
+"username":"_chori", "password":"nanditech"
+}
+//Payment system ### //Khalti //khalti one or first api POST https://edtech.mahajodi.io/payment/khalti/one Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2OWJhNWVjLWRiOWYtNGM3NS05YWQ0LWJkMTBhNDBhMTdjNSIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMzBUMTk6MjA6MTMuNjc3OTcyOTA0WiIsImV4cGlyZWRfYXQiOiIyMDMyLTA0LTA2VDE5OjIwOjEzLjY3Nzk3NDg3NloifQ.PJb_poG0vcRTMpKEyTKLfgl3LR0DzOYiAyXH26fP1Mo
+{
+"public_key":"test_public_key_00c7a01504da4d7a9b836f41777bef9a", "mobile":"9844329569", "transaction_pin":"1712", "amount": 100000 , "product_identity":"demo", "product_name":"edtech"
+}
+### //khalti two or second api POST https://edtech.mahajodi.io/payment/khalti/two Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"public_key":"test_public_key_00c7a01504da4d7a9b836f41777bef9a", "token":"n4wQnV3NmNyGaDgebckFTY", "confirmation_code":"989546",
+"transaction_pin":"1712"
+}
+//khalti three or third api POST https://edtech.mahajodi.io/payment/khalti/three Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"number" :"9844329569",
+"token" :"n4wQnV3NmNyGaDgebckFTY",
+"trid":"cQFKDB6D5wbatFfy45ZXkP",
+"amount" :100000, "childId" :[1,2],
+"save": false
+}
+// Dec 20 2021 //video //fetch video by class ### GET https://edtech.mahajodi.io/video/class Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdiZjdhYjExLWQ3NWItNDE1Yi05M2ZlLWEzNDY4ZTc0NjU4NyIsInVzZXJuYW1lIjoiY2hvcmEiLCJwYXJlbnRfaWQiOjEsImlzc3VlZF9hdCI6IjIwMjEtMTItMjBUMDU6NDA6MTguNTk0MzIzNTAyWiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTI0VDA5OjQwOjE4LjU5NDMyNTE3NVoifQ.cAImQomSK3Sh6yHA5zCxqNSLnf1ixTidqhJvZ0qRIio
+// fetch video by subject ### POST https://edtech.mahajodi.io/video/subject Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdiZjdhYjExLWQ3NWItNDE1Yi05M2ZlLWEzNDY4ZTc0NjU4NyIsInVzZXJuYW1lIjoiY2hvcmEiLCJwYXJlbnRfaWQiOjEsImlzc3VlZF9hdCI6IjIwMjEtMTItMjBUMDU6NDA6MTguNTk0MzIzNTAyWiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTI0VDA5OjQwOjE4LjU5NDMyNTE3NVoifQ.cAImQomSK3Sh6yHA5zCxqNSLnf1ixTidqhJvZ0qRIio
+{
+"subject":"SCIENCE"
+} // fetch video by id or fetch singel video ### POST https://edtech.mahajodi.io/video/single Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdiZjdhYjExLWQ3NWItNDE1Yi05M2ZlLWEzNDY4ZTc0NjU4NyIsInVzZXJuYW1lIjoiY2hvcmEiLCJwYXJlbnRfaWQiOjEsImlzc3VlZF9hdCI6IjIwMjEtMTItMjBUMDU6NDA6MTguNTk0MzIzNTAyWiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTI0VDA5OjQwOjE4LjU5NDMyNTE3NVoifQ.cAImQomSK3Sh6yHA5zCxqNSLnf1ixTidqhJvZ0qRIio
+{ "video_id":6 }
+// add video ### POST https://edtech.mahajodi.io/video/add
+{ "grade":6,
+"subject":"SCIENCE", "topic":"Magnetism", "url":"https://www.youtube.com/watch?v=hFAOXdXZ5TM&ab_channel=minutephysics"
+}
+//ADD payment by esewa or sdk POST https://edtech.mahajodi.io/payment/sdk Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"number" :"9844329569",
+"token" :"n4wQnV3NmNyGaDgebckFTY",
+"trid":"cQFKDB6D5wbatFfy45ZXkP",
+"amount" :100000, "childId" :[1,2],
+"save": false
+}
+//get payment details GET https://edtech.mahajodi.io/payment/details Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+//date 2021/12/27
+//get friends list Get https://edtech.mahajodi.io/friend/list Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+// send friends request ### POST https://edtech.mahajodi.io/friend/send Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"receiver_id":3
+} // send friends request ### POST http://localhost:9010/friend/send Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNiYjBiNjFlLTVhNDUtNGI1Mi05YjNjLTgxYTcyODM1NDQ5MiIsInVzZXJuYW1lIjoiY2hvcmEiLCJwYXJlbnRfaWQiOjEsImlzc3VlZF9hdCI6IjIwMjEtMTItMjdUMDg6Mjk6MDAuOTExMTE3MjE5WiIsImV4cGlyZWRfYXQiOiIyMDMyLTA0LTAzVDA4OjI5OjAwLjkxMTExODkzNloifQ.Jrvuh4UgdPPKUUjgUwMHenH90hjR-Z0B5xsKBTYuqO4
+{
+"receiver_id":3
+} // accept friends request ### POST https://edtech.mahajodi.io/friend/accepts Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"sender_id":1, "notification_id":1
+} //reject friend request ### POST https://edtech.mahajodi.io/friend/reject Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"sender_id":1, "notification_id":1
+} // search ### GET https://edtech.mahajodi.io/search?q=c Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+### //add token for child POST https://edtech.mahajodi.io/child/token Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"token":""
+}
+//add token for parents POST https://edtech.mahajodi.io/parents/token Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"token":""
+}
+//child notification fetch Get https://edtech.mahajodi.io/child/notification Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+### //remove child token Get https://edtech.mahajodi.io/child/token/remove Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+### //remove parents token Get https://edtech.mahajodi.io/parents/token/remove Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+02/01/2022 //Websocket apis //game with friends ### GET https://edtech.mahajodi.io/game/withfriends Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"oponent_id":1, "subject":"SCIENCE", "status":"waiting", "grade":5
+}
+{
+"correct_answer": "b"
+}
+//game notification ### GET https://edtech.mahajodi.io/game/notification Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+### //remove game notification POST https://edtech.mahajodi.io/game/notification/remove Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"notification_id":2
+}
+//remove lobby with friends POST https://edtech.mahajodi.io/game/remove/lobby Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"oponent_id":3
+}
+//game with random player POST edtech.mahajodi.io/game/withrandom Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+{
+"subject": "SCIENCE"
+}
+//remove random lobby ### //game with random player GET edtech.mahajodi.io/game/withrandom/remove/lobby Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+//make offline ### //game with random player GET edtech.mahajodi.io/game/withrandom/offline Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjQ3NmViLTE3MWMtNDE1YS1iM2IwLTJkMzU0YmE2ZTMwZCIsInVzZXJuYW1lIjoiQWFzaHUgTWFsbGljayIsInBhcmVudF9pZCI6MTIsImlzc3VlZF9hdCI6IjIwMjEtMTItMTVUMDg6MzU6NTguNjEyODU3MDI4WiIsImV4cGlyZWRfYXQiOiIyMDIxLTEyLTE5VDEyOjM1OjU4LjYxMjg1ODYxNFoifQ.j8WYyfNgREA2fwX-a5_hLxsQgBQovn6qNT6_EBklIaA
+
