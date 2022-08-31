@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	path := flag.String("c", "/etc/edtech/config", "config file location")
+	path := flag.String("./", "config", "config file location")
 	writeToFile := flag.Bool("f", false, "write logs to file")
 	flag.Parse()
 	config, err := util.LoadConfig(*path)
