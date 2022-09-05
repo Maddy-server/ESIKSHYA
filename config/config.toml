@@ -17,7 +17,7 @@
 [server]
     listen="0.0.0.0:9010"
 [firebase]
-    credentialPath="/etc/edtech/firebase.json"
+    credentialPath="./config/firebase.json"
 [aws]
     region="ap-south-1"
     bucketName="sanduk-edtech"

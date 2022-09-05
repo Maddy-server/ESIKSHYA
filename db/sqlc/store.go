@@ -62,7 +62,7 @@ func initializeAppWithServiceAccount(config *util.Config) *firebase.App {
 		logrus.Fatal("firebase credential file not found in " + filepath.Join(config.Firebase.CredentialPath))
 	}
 	opt := option.WithCredentialsFile(absPath)
-	fConfig := &firebase.Config{ProjectID: "sanduk-13024"}
+	fConfig := &firebase.Config{ProjectID: "esikshya-6c829"}
 	app, err := firebase.NewApp(context.Background(), fConfig, opt)
 	if err != nil {
 		logrus.Fatal(err)
